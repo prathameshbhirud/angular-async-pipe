@@ -1,0 +1,12 @@
+<h3>AsyncPipe with Observable using NgFor</h3>
+<ul>
+  <li *ngFor="let book of observableBooks | async" >
+    Id: {{book.id}}, Name: {{book.name}}
+  </li>
+</ul> 
+
+<h3>AsyncPipe with Date</h3>
+
+<div>{{ observableTime | async }} </div> <br/>
+
+<div>{{ observableTime | async | date : 'mediumTime' }} </div> 
